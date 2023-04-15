@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <input type="text" id="str" placeholder="Enter a string" required><br><br>
+    <button onclick="myFunc()">get ly suffix</button>
+    <button onclick="myFunc1()">get less suffix</button>
+    <p id="con"></p>
+    <p id="con1"></p>
+</body>
+<script>
+    function myFunc(){
+        let x = document.getElementById('str').value
+        document.getElementById('con').innerHTML = x
+        
+        let up = x.concat("ly")
+        document.getElementById('con').innerHTML = up
+
+    }
+    function myFunc1(){
+        let x = document.getElementById('str').value
+        document.getElementById('con1').innerHTML = x
+        
+        let up = x.concat("less")
+        document.getElementById('con1').innerHTML = up
+
+    }
+</script>
+</html>
